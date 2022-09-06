@@ -33,7 +33,7 @@ const handleSubmit=(e)=>{
    
   };
 
-  fetch("https://fibonaccidjangobackend.herokuapp.com/api/user/register/", requestOptions)
+  fetch("http://127.0.0.1:8000/api/user/register/", requestOptions)
   .then(response => response.json())
   .then(result =>{ 
     if(result?.errors){

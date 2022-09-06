@@ -21,7 +21,7 @@ const Login = () => {
       body: JSON.stringify({email,password}),
       redirect: "follow",
     };
-    fetch("https://fibonaccidjangobackend.herokuapp.com/api/user/login/", requestOptions)
+    fetch("http://127.0.0.1:8000/api/user/login/", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         if (result?.errors) {

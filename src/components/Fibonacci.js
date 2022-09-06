@@ -23,7 +23,7 @@ const Fibonacci = () => {
       body: formdata,
       redirect: "follow",
     };
-    fetch("https://fibonaccidjangobackend.herokuapp.com/api/fibo/fibonacci", requestOptions)
+    fetch("http://127.0.0.1:8000/api/fibo/fibonacci", requestOptions)
       .then((response) => response.text())
       .then((result) => setSeries(result))
       .catch((error) => console.log("error", error));
